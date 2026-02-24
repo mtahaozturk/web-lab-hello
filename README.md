@@ -26,3 +26,6 @@
   
    ## Ekran Goruntusu 
    <img width="697" height="468" alt="Ekran görüntüsü 2026-02-24 144142" src="https://github.com/user-attachments/assets/036b73bf-e429-48f5-9e36-bcb13399ebbf" />
+   
+   <img width="1919" height="969" alt="Ekran görüntüsü 2026-02-24 155605" src="https://github.com/user-attachments/assets/393c01d2-b314-49e5-a64b-317f2066040a" />
+
