@@ -2,6 +2,7 @@ import { useState } from 'react'
 import DarkModeToggle from './components/DarkModeToggle.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import UIKit from './pages/UIKit.jsx'
+import Lab5Projects from './pages/Lab5Projects.tsx'
 
 export default function App() {
   const [page, setPage] = useState('portfolio')
@@ -34,10 +35,21 @@ export default function App() {
           >
             UI Kit
           </button>
+          <button
+            type="button"
+            onClick={() => setPage('lab5')}
+            className={`px-3 py-1 rounded-md text-sm transition-colors ${
+              page === 'lab5'
+                ? 'bg-primary text-white'
+                : 'bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700'
+            }`}
+          >
+            LAB-5
+          </button>
         </div>
       </div>
 
-      {page === 'portfolio' ? <Portfolio /> : <UIKit />}
+      {page === 'portfolio' ? <Portfolio /> : page === 'uikit' ? <UIKit /> : <Lab5Projects />}
     </div>
   )
 }
